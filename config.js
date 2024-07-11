@@ -15,7 +15,6 @@ const settingsMenu = [
     {title: "Auto read status updates", env_var: "AUTO_READ_STATUS"},
     {title: "Admin sudo acces mode (group commands only)", env_var: "ADMIN_ACCESS"},
     {title: "With & without handler mode", env_var: "MULTI_HANDLERS"},
-    {title: "Auto reject calls", env_var: "REJECT_CALLS"},
     {title: "Always online", env_var: "ALWAYS_ONLINE"},
     {title: "PM Auto blocker", env_var: "PMB_VAR"},
     {title: "Disable bot in PM", env_var: "DIS_PM"}
@@ -46,7 +45,6 @@ module.exports = {
     READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
     PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
     DIS_PM: convertToBool(process.env.DIS_PM) || false,
-    REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
     SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
